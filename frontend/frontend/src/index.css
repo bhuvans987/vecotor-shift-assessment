@@ -163,6 +163,17 @@ body {
   background: rgba(15, 23, 42, 0.4);
   border-top-left-radius: var(--radius-lg);
   border-top-right-radius: var(--radius-lg);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.base-node-header.centered {
+  justify-content: center;
+}
+
+.base-node-header.centered .base-node-badge {
+  position: absolute;
+  right: 14px;
 }
 
 .base-node-title-group {
@@ -199,6 +210,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: padding 0.2s ease;
+}
+
+.base-node-body.has-variables {
+  padding-left: 28px;
 }
 
 /* Node Field Controls */
@@ -217,7 +233,13 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
+  transition: justify-content 0.2s ease;
 }
+
+.node-field-label.centered {
+  justify-content: center;
+}
+
 
 .node-input, 
 .node-select, 
@@ -243,8 +265,10 @@ body {
 }
 
 .node-textarea {
-  resize: vertical;
-  min-height: 50px;
+  resize: none;
+  overflow: hidden;
+  min-height: 32px;
+  line-height: 1.4;
 }
 
 .node-text-display {

@@ -34,7 +34,7 @@ export const DatabaseNode = ({ id, data }) => {
         <label className="node-field-label">Table</label>
         <input
           type="text"
-          className="node-input"
+          className="node-input nodrag nopan"
           value={tableName}
           onChange={(e) => setTableName(e.target.value)}
         />
@@ -42,7 +42,7 @@ export const DatabaseNode = ({ id, data }) => {
       <div className="node-field">
         <label className="node-field-label">Operation</label>
         <select 
-          className="node-select"
+          className="node-select nodrag nopan"
           value={operation} 
           onChange={(e) => setOperation(e.target.value)}
         >

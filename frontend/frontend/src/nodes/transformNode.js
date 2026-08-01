@@ -32,7 +32,7 @@ export const TransformNode = ({ id, data }) => {
       <div className="node-field">
         <label className="node-field-label">Type</label>
         <select 
-          className="node-select"
+          className="node-select nodrag nopan"
           value={transformType} 
           onChange={(e) => setTransformType(e.target.value)}
         >

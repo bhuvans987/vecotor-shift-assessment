@@ -18,7 +18,7 @@ export const NoteNode = ({ id, data }) => {
       <div className="node-field">
         <label className="node-field-label">Note</label>
         <textarea
-          className="node-textarea"
+          className="node-textarea nodrag nopan"
           value={noteText}
           placeholder="Enter note..."
           onChange={(e) => setNoteText(e.target.value)}

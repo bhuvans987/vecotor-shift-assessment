@@ -40,7 +40,7 @@ export const FilterNode = ({ id, data }) => {
       <div className="node-field">
         <label className="node-field-label">Condition</label>
         <select 
-          className="node-select"
+          className="node-select nodrag nopan"
           value={condition} 
           onChange={(e) => setCondition(e.target.value)}
         >
@@ -54,7 +54,7 @@ export const FilterNode = ({ id, data }) => {
         <label className="node-field-label">Value</label>
         <input
           type="text"
-          className="node-input"
+          className="node-input nodrag nopan"
           value={filterValue}
           onChange={(e) => setFilterValue(e.target.value)}
         />

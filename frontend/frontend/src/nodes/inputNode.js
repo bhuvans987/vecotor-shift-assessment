@@ -37,14 +37,14 @@ export const InputNode = ({ id, data }) => {
         <label className="node-field-label">Name</label>
         <input 
           type="text" 
-          className="node-input"
+          className="node-input nodrag nopan"
           value={currName} 
           onChange={handleNameChange} 
         />
       </div>
       <div className="node-field">
         <label className="node-field-label">Type</label>
-        <select className="node-select" value={inputType} onChange={handleTypeChange}>
+        <select className="node-select nodrag nopan" value={inputType} onChange={handleTypeChange}>
           <option value="Text">Text</option>
           <option value="File">File</option>
         </select>

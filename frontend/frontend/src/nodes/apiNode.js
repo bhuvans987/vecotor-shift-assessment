@@ -33,7 +33,7 @@ export const APINode = ({ id, data }) => {
       <div className="node-field">
         <label className="node-field-label">Method</label>
         <select 
-          className="node-select"
+          className="node-select nodrag nopan"
           value={method} 
           onChange={(e) => setMethod(e.target.value)}
         >
@@ -47,7 +47,7 @@ export const APINode = ({ id, data }) => {
         <label className="node-field-label">URL</label>
         <input
           type="text"
-          className="node-input"
+          className="node-input nodrag nopan"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
         />
