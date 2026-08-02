@@ -9,6 +9,7 @@ export const BaseNode = ({
   children,
   style = {},
   hasVariables = false,
+  bodyStyle = {},
 }) => {
   const containerStyle = {
     minWidth: 210,
@@ -55,22 +56,26 @@ export const BaseNode = ({
             {icon && <span className="base-node-icon" style={{ color: accentColor }}>{icon}</span>}
             <span className="base-node-title">{title}</span>
           </div>
-          <span 
-            className="base-node-badge" 
-            style={{ 
-              backgroundColor: `${accentColor}20`, 
-              color: accentColor, 
-              borderColor: `${accentColor}40` 
+          <span
+            className="base-node-badge"
+            style={{
+              backgroundColor: `${accentColor}20`,
+              color: accentColor,
+              borderColor: `${accentColor}40`
             }}
           >
             Node
           </span>
         </div>
       )}
-      <div className={`base-node-body ${hasVariables ? 'has-variables' : ''}`}>
+      <div
+        className={`base-node-body ${hasVariables ? 'has-variables' : ''}`}
+        style={bodyStyle}
+      >
         {children}
       </div>
     </div>
   );
 };
+
 
